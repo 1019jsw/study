@@ -1,0 +1,70 @@
+Alt + #[0-9] 단축메뉴 열기
+Shift + F6 Rename
+Alt + Insert  코드 생성 (Getters, Setters, Constructors,hashCode/equals, toString)
+Ctrl + / 줄 단위 주석 토글
+Ctrl + Alt + L  파일 단위 재정렬 (이클립스의 ctrl + shift + f) 
+Ctrl + Alt + I  줄단위 재정렬
+Ctrl + Shift + V 복사하기 (목록에서 선택하여)
+Ctrl + D 선택된 블럭을 복제
+Ctrl + Y 캐럿을 있는 곳의 라인 삭제
+Ctrl + F4 Close active editor tab
+Alt + Up/Down Go to previous/next method
+Ctrl + Delete 단어 삭제 (커서 시작부터)
+Ctrl + Backspace Delete to word start
+Ctrl + Shift + ] / [  가장 가까운 괄호 시작/종료로 이동
+Alt + Right/Left Go to next/previous editor tab
+F12 Go back to previous tool window
+Shift + Esc Hide active or last active window
+Ctrl + Shift + F4 Close active run/messages/find/... tab
+Ctrl + Shift + Backspace Navigate to last edit location
+Ctrl + Alt + Left/Right Navigate back/forward
+Ctrl + F Find
+F3 Find next
+Shift + F3 Find previous
+Ctrl + R Replace
+
+inn =>
+if (b != null) {
+            
+}
+
+Ctrl + Alt + Y 파일 Synchronize
+Ctrl + Shift + F12 Toggle maximizing editor
+Ctrl + Tab Switch between tabs and tool window
+F5 파일복사
+F6 파일이동
+
+Ctrl + Alt + H Call 한메소드들
+F2 / Shift + F2 에러찾기
+F11 북마크 빠르게 남기기
+Ctrl + F11 북마크 숫자로남기기
+Ctrl + #[0-9] 북마크 숫자 찾아가기
+Shift + F11 북마크보기
+Ctrl + Alt + P 파라미터명 바꾸기
+Alt + Shift + C local 작업 히스토리
+Ctrl + Shift + Enter Complete statement
+Ctrl + O  메서드 오버라이드 구현
+Ctrl + I    인터페이스 메서드 구현
+Ctrl + Alt + T  다음으로 코드 감싸기… (if..else, try..catch, for,synchronized, etc.)
+Ctrl + Shift + /  블럭 단위 주석 토글
+Ctrl + W 가장 안쪽의 괄호부터 선택(점점 확장 된다.)
+Ctrl + Alt + O import 문 최적화
+Ctrl + Shift + J 스마트하게 코드를 한 줄로 합친다.
+Ctrl + Enter 스마트하게 코드를 여러줄로 나눈다.
+Ctrl + Shift + U 커서가 있는 곳이나 블럭이 있는 곳을 대문자 및 소문자로 치환
+Ctrl + F12 File structure popup
+Alt + F7 / Ctrl + F7 Find usages / Find usages in file
+Ctrl + Shift + F7 Highlight usages in file
+Ctrl + N Go to class
+Ctrl + Shift + N Go to file
+Ctrl + Alt + Shift + N Go to symbol
+Ctrl + G Go to line
+Ctrl + E Recent files popup
+Ctrl + B or Ctrl + Click Go to declaration
+Shift + F10 Run
+Ctrl + Shift + S Search structurally (Ultimate Edition only)
+Ctrl + Shift + M Replace structurally (Ultimate Edition only)
+Ctrl + Shift + J 스마트하게 코드를 한 줄로 합친다.
+Ctrl + Enter 스마트하게 코드를 여러줄로 나눈다
+Ctrl + Shift + NumPad+ Expand all/ Collapse all
+Shift + F9 Debug

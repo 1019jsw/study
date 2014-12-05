@@ -1,0 +1,8 @@
+console.group('oShowTextvalue < sToday ');
+                console.log(oShowTextvalue);
+                console.log(sToday);
+                console.log(oShowTextvalue < sToday);
+                console.groupEnd();
+
+
+console.table()인데, 파라메터로 객체 넘기면 표로 나옴
