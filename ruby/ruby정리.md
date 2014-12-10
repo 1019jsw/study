@@ -205,7 +205,11 @@
 
 - 표준 입출력
 	- STDIN. STDOUT, STDERR
+<<<<<<< HEAD
 	- STDOUT.puts "Hello", STDERR.puts("Error")
+=======
+	- STDOUT.puts "Hello", STDERR.puts("Error").
+>>>>>>> test2
 
 - 명령줄 인수
 	- ARGV라는 특수한 배열에 저장된다
