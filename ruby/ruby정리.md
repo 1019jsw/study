@@ -31,7 +31,7 @@
 
 - 변수와 클래스 이름
 	- 상수, 클래스 이름 : 대문자로 시작
-		- PI
+		- PI => 한 번 정의한 상수를 다시 정의할 수 없다
 		- FeetperMile
 		- String
 		- MyClass
@@ -66,6 +66,8 @@
 		puts "#@greeting, #@name"
 		실행결과 : Hello, Prudence
 
+    - *을 사용하면 문자열을 지정한 숫자만큼 연결할 수 있다
+
 - 루비 메서드에서 반환하는 값은 마지막으로 실행된 표현식의 결과값이다
 	- def say_goodnight(name)
 		"Goodnignt, #{name}"
@@ -88,6 +90,13 @@
          	   a = %w{개미 벌 고양이 개 엘크}
 		 	    a[0] -> "개미"
                 a[3] -> "개"
+
+         -  a.clear 를 사용하여 배열을 비울수있다
+         -  a = Array.new(숫자) 를 사용하여 배열 생성
+         	a = Array.new 생성할 경우 빈 배열 생성
+            a = Array.new(3, 1) =>3요소의 1개의 값들을 넣을수 있는 배열
+         - 빈 요소를 참조하면 nil 반환
+         - 다차원배열 형태 a = [ [1, 2, 3], [4, 5, 6] ]
 
 	- 해시
 		- 리터럴은 대괄호 대신 중괄호 {}를 사용
@@ -112,6 +121,11 @@
             histogram['key1'] -> 0
             histogram['key1'] = histogram['key1'] + 1
             histogram['key1'] -> 1
+
+        - 해쉬를 비우려면 a = {}
+        - a = Hash.new
+        - 빈 값엔 nil이 들어간다
+        - 삭제 시 a.delete("key")
 
 - 제어문
 	- 제어문의 코드에 중괄호가 없다
@@ -161,4 +175,46 @@
             square = square*square while square > 1000
 
 - 정규표현식
+	- Pattern
+    	- (/pattern/)
+        - /Perl|Python/ => Perl or Python
+        - /P(erl|ython)/ => Perl or Python
+        - /ab+c/ => a 와 1개 이상의 b 그리고 c
+        - /ab*c/ => aㅇ와 b가 없거나 여러개, 그리고 c
+        - 문자 그룹 \s 공백문자(space, tab, newline), \d 숫자, \w 일반적인문자,
+            ',' 아무 글자나 한 글자
+            ex)
+             /\d\d:\d\d:\d\d/ # 12:34:56 형태의 시간
+            /Perl.*Python/ # Perl, 0개 이상의 문자들, 그리고 Python
+            /Perl Python/ # Perl, 공백, Python
+            /Perl *Python/ # Perl, 0개 이상의 공백, 그리고 Python
+            /Perl +Python/ # Perl, 1개 이상의 공백, 그리고 Python
+            /Perl\s+Python/ # Perl, 1개 이상의 공백 문자, 그리고 Python
+            /Ruby (Perl|Python)/ # Ruby, 공백, 그리고 Perl 이나 Python 중하나
 
+	- Match
+        - =~ 특정 문자열이 정규표현식과 매치되는지 검사
+            패턴이 발견되면 첫 위치를 반환, 아니면 nil 반환
+            if line =~ /Perl|Python/
+            puts “스크립트 언어에 대한 언급: #{line}“
+            end
+	- 치환
+		- line.sub(/Perl/, ‘Ruby‘) # 처음 나오는 ‘Perl‘을 ‘Ruby‘로치환
+		- line.gsub(/Python/, ‘Ruby‘) # 모든 ‘Python‘을 ‘Ruby‘로치환
+		- line.gsub( /Perl|Python/, ‘Ruby‘ ) # 문자열에서 Perl 과 Python을 모두 Ruby로치환
+
+- 표준 입출력
+	- STDIN. STDOUT, STDERR
+	- STDOUT.puts "Hello", STDERR.puts("Error").
+
+- 명령줄 인수
+	- ARGV라는 특수한 배열에 저장된다
+	- ARGV[0] 형식으로 호출
+
+- Block
+	- 이름이 없는 메소드라고 생각할 수 있다
+	- 하나의 문(statement)만 가지면, {}를, 둘 이상이라면 do end를 사용
+
+
+	- ex) >> [2, 10, 8, 26, 32].all? {|num| num%2 == 0}
+			=> true
